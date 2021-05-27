@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
+import '../../App.css';
 import Video from '../Video'
+import Recommend from '../Recommend'
 
-
-export class Home extends Component {
-    render() {
-        return (
-            <>
-                <Video />
-                {/* <Cards /> */}
-            </>
-        )
-    }
+function Home() {
+    return (
+        <div>
+            <Video />
+            <Recommend />
+        </div>
+    )
 }
 
 export default Home
+
