@@ -18,7 +18,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/services'
+                to='/map'
                 className='nav-links'
               >
                 Map
@@ -35,7 +35,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/log-in'
+                to='/login'
                 className='nav-links'
                 
               >

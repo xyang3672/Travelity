@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../App.css';
+import Video from '../Video'
+import Recommend from '../Recommend'
 
 export default function Discover() {
-  return <h1 className='discover'>Discover</h1>;
+  return (
+    <div>
+        <Video />
+        <Recommend />
+    </div>
+  ) 
 }

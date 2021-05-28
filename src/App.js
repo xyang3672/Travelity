@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Map from './components/pages/Map';
 import Discover from './components/pages/Discover';
 import Login from './components/pages/Login';
+import './App.css'
 
 function App() {
   return (
