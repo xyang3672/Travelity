@@ -5,7 +5,8 @@ import loginImg from "../../login.jpg";
 function Login(props) {
   return (
     <div className="base-container" ref={props.containerRef}>
-    <div className="header">Login</div>
+      <video src='/videos/background.mp4' autoPlay loop muted />
+    
     <div className="content">
       <div className="image">
         <img src={loginImg} />
@@ -20,12 +21,13 @@ function Login(props) {
           <input type="password" name="password" placeholder="password" />
         </div>
       </div>
+      <div className="footer">
+        <button type="button" className="btn">
+          Login
+        </button>
+      </div>
     </div>
-    <div className="footer">
-      <button type="button" className="btn">
-        Login
-      </button>
-    </div>
+    
   </div>
   )
 }
