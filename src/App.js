@@ -7,6 +7,7 @@ import Map from './components/pages/Map';
 import Discover from './components/pages/Discover';
 import Login from './components/pages/Login';
 import './App.css'
+import { ImageData } from './components/ImageData'
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={() => <Home />} />
           <Route path="/map" exact component={() => <Map />} />
-          <Route path="/discover" exact component={() => <Discover />} />
+          <Route path="/discover" exact component={() => <Discover slides={ImageData} />} />
           <Route path="/login" exact component={() => <Login />} />
         </Switch>
         <Footer />

@@ -1,13 +1,27 @@
 import React from 'react';
-import '../../App.css';
-import Video from '../Video'
-import Recommend from '../Recommend'
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+const Map = () => {
 
-export default function Map() {
-  return(
-    <div>
-      <Video />
-      <Recommend />
-    </div>
-  );
+  const mapStyles = {        
+    height: "100vh",
+    width: "100%"
+  };
+  
+  const defaultCenter = {
+    lat: 40.730610,
+    lng:  -73.935242
+  }
+
+  return (
+        <LoadScript
+          googleMapsApiKey='AIzaSyBWlgIpHRXzLbzzWM_ULaCODpcCCGhEntc'>
+            <GoogleMap
+              mapContainerStyle={mapStyles}
+              zoom={13}
+              center={defaultCenter}
+            />
+        </LoadScript>
+  )
 }
+
+export default Map;
