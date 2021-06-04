@@ -28,7 +28,7 @@ const Discover = ({slides}) => {
       {ImageData.map((slide, index) => {
         return (
           <div className={index == current ? 'slide active': 'slide'} key={index}>
-            {index === current && (<img src={slide.image} alt="travel" className='image'/>)}
+            {index === current && (<img src={slide.image} alt="travel" className='slide-image'/>)}
             </div>
           
         )
