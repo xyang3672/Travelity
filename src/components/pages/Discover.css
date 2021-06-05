@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../../background.jpg');
 }
 
-.slide-imagegi {
+.slide-image {
     width: 1000px;
     height:600px;
     border-radius: 10px;

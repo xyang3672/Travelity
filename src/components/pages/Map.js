@@ -4,7 +4,8 @@ const Map = () => {
 
   const mapStyles = {        
     height: "100vh",
-    width: "100%"
+    width: "100%",
+    left: "30%"
   };
   
   const defaultCenter = {
@@ -15,6 +16,7 @@ const Map = () => {
   return (
         <LoadScript
           googleMapsApiKey='AIzaSyBWlgIpHRXzLbzzWM_ULaCODpcCCGhEntc'>
+            <div className='nearby'> Nearby Places</div>
             <GoogleMap
               mapContainerStyle={mapStyles}
               zoom={13}

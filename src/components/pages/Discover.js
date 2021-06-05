@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { ImageData } from '../ImageData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import './Discover.css'
-import Video from '../Video'
 
 const Discover = ({slides}) => {
   const [current, setCurrent] = useState(0)
@@ -15,7 +14,7 @@ const Discover = ({slides}) => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current -1)
   }
-  if (!Array.isArray(slides) || slides.lenth <= 0){
+  if (!Array.isArray(slides) || slides.length <= 0){
     return null;
   }
 
@@ -27,7 +26,7 @@ const Discover = ({slides}) => {
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
       {ImageData.map((slide, index) => {
         return (
-          <div className={index == current ? 'slide active': 'slide'} key={index}>
+          <div className={index === current ? 'slide active': 'slide'} key={index}>
             {index === current && (<img src={slide.image} alt="travel" className='slide-image'/>)}
             </div>
           

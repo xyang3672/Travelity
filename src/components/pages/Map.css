@@ -1,0 +1,4 @@
+.nearby {
+    display: flex;
+    flex-wrap: wrap;
+}
