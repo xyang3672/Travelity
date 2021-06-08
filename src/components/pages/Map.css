@@ -1,4 +1,8 @@
 .nearby {
-    display: flex;
-    flex-wrap: wrap;
+    padding-top:100px;
+    width: 25%;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+    position: absolute;
 }

@@ -22,7 +22,7 @@ const Discover = ({slides}) => {
   return (
     <section className="slider">
       <video src='/videos/background.mp4' autoPlay loop muted />
-      <FaArrowAltCircleLeft className="left-arrow"/>
+      <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
       {ImageData.map((slide, index) => {
         return (

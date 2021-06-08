@@ -6,7 +6,6 @@ function Login(props) {
   return (
     <div className="base-container" ref={props.containerRef}>
       <video src='/videos/background.mp4' autoPlay loop muted />
-    
     <div className="content">
       <div className="image">
         <img src={loginImg} alt='img' />
