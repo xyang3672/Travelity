@@ -7,12 +7,14 @@ export class NearbyList extends Component {
         return (
             <div className="nearby">
                 <h2> Nearby Places </h2>
-                <input type="text" />
                 <ol>
                     {locations.map(loc => (
-                        <li>
+                        <li key={loc.venue.id}>
                             <div>
-                                <h2>{loc.venue.name}</h2>
+                                <p className='title'> 
+                                    Name: <a href="#">{loc.venue.name}</a> 
+                                </p>
+                                <p>Address: {loc.venue.location.address}</p>
                             </div>
                         </li>
                     ))}
