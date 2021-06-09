@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { ImageData } from '../ImageData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import './Discover.css'
+import Blog from "../Blog"
+import Recommend from '../Recommend'
 
 const Discover = ({slides}) => {
   const [current, setCurrent] = useState(0)
@@ -20,8 +22,8 @@ const Discover = ({slides}) => {
 
 
   return (
+    <>
     <section className="slider">
-      <video src='/videos/background.mp4' autoPlay loop muted />
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
       {ImageData.map((slide, index) => {
@@ -33,6 +35,8 @@ const Discover = ({slides}) => {
         )
       })}
     </section>
+    <Recommend />
+    </>
   )
 }
 

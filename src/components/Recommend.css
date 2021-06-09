@@ -7,6 +7,11 @@ h1 {
   text-align: center;
 }
 
+#post{
+  margin-left: auto;
+  font-size: 20px;
+}
+
 .cards__container {
   display: flex;
   flex-flow: column;

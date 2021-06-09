@@ -5,7 +5,8 @@ import './Recommend.css'
 function recommend() {
     return (
         <div className='cards'>
-        <div className='cards__container'>
+          
+        <div className='cards__container'><a id="post" href="#">Post</a>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
               <Card
