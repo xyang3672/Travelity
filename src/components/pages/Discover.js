@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import { ImageData } from '../ImageData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import './Discover.css'
-import Blog from "../Blog"
 import Recommend from '../Recommend'
 
 const Discover = ({slides}) => {
